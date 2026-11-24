@@ -1,0 +1,25 @@
+package br.com.senai.infob.backend.projeto_comercio.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import br.com.senai.infob.backend.projeto_comercio.models.Usuario;
+import br.com.senai.infob.backend.projeto_comercio.services.UsuarioService;
+
+
+@RestController
+@RequestMapping("/usuario")
+
+public class UsuarioController {
+
+    @Autowired 
+    private UsuarioService usuarioService;
+
+    @PostMapping("/cadastrar")
+    public Usuario cadastrar(@org.springframework.web.bind.annotation.RequestBody Usuario usuario) {
+        return usuarioService.cadastrar(usuario);
+    }
+    
+}

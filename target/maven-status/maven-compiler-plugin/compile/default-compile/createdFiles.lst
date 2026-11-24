@@ -1,0 +1,6 @@
+br\com\senai\infob\backend\projeto_comercio\models\Usuario.class
+br\com\senai\infob\backend\projeto_comercio\controllers\UsuarioController.class
+br\com\senai\infob\backend\projeto_comercio\repositories\UsuarioRepository.class
+br\com\senai\infob\backend\projeto_comercio\services\UsuarioService.class
+br\com\senai\infob\backend\projeto_comercio\configs\Swagger.class
+br\com\senai\infob\backend\projeto_comercio\ProjetoComercioApplication.class
