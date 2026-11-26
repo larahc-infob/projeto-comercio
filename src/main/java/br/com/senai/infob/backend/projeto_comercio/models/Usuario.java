@@ -18,18 +18,18 @@ public class Usuario {
     private Integer id;
 
     @Column (name= "nome")
-    private Integer nome;
+    private String nome;
 
     @Column (name= "email")
-    private Integer email;
+    private String email;
 
     @Column (name= "senha")
-    private Integer senha;
+    private String senha;
 
     public Usuario() {
     }
 
-    public Usuario(Integer email, Integer id, Integer nome, Integer senha) {
+    public Usuario(String email, Integer id, String nome, String senha) {
         this.email = email;
         this.id = id;
         this.nome = nome;
@@ -44,27 +44,27 @@ public class Usuario {
         this.id = id;
     }
 
-    public Integer getNome() {
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(Integer nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
-    public Integer getEmail() {
+    public String getEmail() {
         return email;
     }
 
-    public void setEmail(Integer email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
-    public Integer getSenha() {
+    public String getSenha() {
         return senha;
     }
 
-    public void setSenha(Integer senha) {
+    public void setSenha(String senha) {
         this.senha = senha;
     }
 }
